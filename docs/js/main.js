@@ -287,7 +287,7 @@
 
 	// Document on load.
 	$(document).ready(function(){
-		// noRightClick();
+		noRightClick();
 		burgerMenu();
 		testimonialCarousel();
 		sliderMain();
@@ -296,7 +296,7 @@
 		windowScroll();
 		navigationSection();
 		contentWayPoint();
-		inlineSVG();
+		// inlineSVG();
 		// bgVideo();
 	});
 
