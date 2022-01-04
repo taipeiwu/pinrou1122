@@ -7,7 +7,7 @@
 		
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>吳品葇的誕生日記</title>
+	<title>吴品葇的诞生日记</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- 
@@ -58,15 +58,6 @@
 	
 	<link rel="stylesheet" href="css/style.css">
 
-	<!-- Determine the browser language -->
-	<script>
-		// https://kanchengzxdfgcv.blogspot.com/2019/01/js-navigatorlanguage.html
-		sys = (navigator.language||navigator.userLanguage||navigator.browserLanguage||navigator.systemLanguage).toLowerCase();
-		if (sys === 'zh-cn') {
-			window.location.href = 'index_cn.html';
-		}
-	</script>
-
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
 	<!-- FOR IE9 below -->
@@ -83,17 +74,13 @@
 	        <div class="navbar-header">
 	        	<!-- Mobile Toggle Menu Button -->
 				<a href="#" class="js-qbootstrap-nav-toggle qbootstrap-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
-	          	<span class="navbar-brand font-style-1 dummy2 v">
-					  <ruby>葇<rt>ㄖㄡˊ</rt></ruby>
-					  <ruby>品<rt>ㄆ一ㄣˇ</rt></ruby>
-					  <ruby>吳<rt>ㄨˊ</rt></ruby>
-				</span> 
+	          	<span class="navbar-brand font-style-1">吴品葇</span> 
 	          	<span class="navbar-brand">Baby Story</span> 
 	        </div>
 	        <div id="navbar" class="navbar-collapse collapse">
 	          <ul class="nav navbar-nav navbar-right">
-	            <li class="active"><a href="#" data-nav-section="video"><span>影片Video</span></a></li>
-	            <li><a href="#" data-nav-section="gallery"><span>寫真Gallery</span></a></li>
+	            <li class="active"><a href="#" data-nav-section="video"><span>视频Video</span></a></li>
+	            <li><a href="#" data-nav-section="gallery"><span>写真Gallery</span></a></li>
 	          </ul>
 	        </div>
 		    </nav>
@@ -109,9 +96,23 @@
 					<div class="container">
 						<div class="col-md-10 col-md-offset-1">
 							<div class="animate-box svg-sm colored">
-								<img src="images/flaticon/svg/004-nature.svg" class="svg" alt="Baby photos">
+								<img src="images/flaticon/svg/004-nature_cn.svg" class="svg" alt="Baby photos">
 								<!-- <p><iframe type="text/html" src="https://www.youtube-nocookie.com/embed/IGXKsC--YKw?rel=0&playlist=IGXKsC--YKw&vq=hd1080&autoplay=1&modestbranding=1&showinfo=0&iv_load_policy=3&disablekb=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p> -->
-								<p><iframe type="text/html" src="https://www.youtube.com/embed/IGXKsC--YKw?rel=0&vq=hd1080&autoplay=1&modestbranding=1&iv_load_policy=3&disablekb=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+								<!-- <p><iframe type="text/html" src='https://player.youku.com/embed/XNTgzMjA2ODUxNg==' title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p> -->
+								<p>
+									<div id="youkuplayer"></div>
+									<script type="text/javascript" src="https://player.youku.com/jsapi"></script>
+									<script type="text/javascript">
+									var player = new YKU.Player('youkuplayer',{
+										styleid: '0',
+										client_id: 'db28698382d53e23',
+										vid: 'XNTgzMjA2ODUxNg==',
+										newPlayer: true,
+										autoplay: true,
+										password: 'd2bc0bba7af21e53265ff1b9d9b1e6fc'
+									});
+									</script>
+								</p>
 							</div>
 						</div>
 					</div>
@@ -131,8 +132,8 @@
 						<div class="row">
 						<div class="col-md-10 col-md-offset-1 subtext">
 							<!-- <h3>品葇寶寶寫真，歡迎大家觀看唷！</h3> -->
-							<h3 class="text-left text-justify">各位叔叔、阿姨們，你們好！您們久等了～我滿月囉！這是我的爸爸、媽媽幫我精挑細選出來的照片，希望您們會喜歡，感謝您們的祝福，我會平安健康快樂長大的，有空要多來看看我唷！</h3>
-							<h4 class="text-right">Daddy 吳國睿 <span class="heart">♥</span> Mommy 黃怡玲</h4>
+							<h3 class="text-left text-justify">各位叔叔、阿姨们，你们好！您们久等了～我满月啰！这是我的爸爸、妈妈帮我精挑细选出来的照片，希望您们会喜欢，感谢您们的祝福，我会平安健康快乐长大的，有空要多来看看我唷！</h3>
+							<h4 class="text-right">Daddy 吴国睿 <span class="heart">♥</span> Mommy 黄怡玲</h4>
 						</div>
 					</div>
 					</div>
@@ -202,8 +203,8 @@
 		<div class="container">
 			<div class="row row-bottom-padded-sm">
 				<div class="col-md-12">
-					<p class="copyright text-center">&copy; 2021 私人影片&寫真. 僅限受邀者瀏覽本網站</p>
-					<p class="copyright text-center">若須使用、儲存或轉載網站內之照片、影片及任何元素，請聯繫：<a href="mailto:taipeiwu@gmail.com">taipeiwu@gmail.com</a></p>
+					<p class="copyright text-center">&copy; 2021 私人影片&写真. 仅限受邀者浏览本网站</p>
+					<p class="copyright text-center">若须使用、储存或转载网站内之照片、影片及任何元素，请联系：<a href="mailto:taipeiwu@qq.com">taipeiwu@qq.com</a></p>
 				</div>
 			</div>
 		</div>
